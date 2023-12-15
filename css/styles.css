@@ -80,20 +80,34 @@ img {
     gap: 40px;
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus,
-.nav-list-link:active {
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
     color: #404BBF;
 }
 
-.nav-list-link {
+.header-link {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: 0.02em; 
     color: #2E2F42;
     padding: 24px 0;
+
 }
+
+.header-link.active {
+    color: #404BBF;
+}
+
+.header-link.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;   
+} 
 
 .address-link:hover,
 .address-link:focus {
@@ -121,7 +135,12 @@ img {
 .hero-section {
     padding: 188px 0;
     background-color: #2E2F42; 
-
+    background-image: 
+    linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+    url(../images/hero-backgr.jpg);
+    background-size: cover;
 }
 
 .hero-container {
@@ -265,13 +284,15 @@ img {
     padding: 0;
 }
 
-.team-card {
-    background-color: #fff;
-    border-radius: 0px 0px 4px 4px;
+.team-card:hover {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     width: calc((100% - 72px) / 4);
 }
 
+.team-card {
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+}
 
 .team-text-container {
     margin-top: 32px;
@@ -302,13 +323,43 @@ img {
     padding: 0;
 }
 
-.icons-div {
+.icons-list {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     justify-content: center;
     align-items: center;
-    
 }
+
+.icons-item {
+    width: 40px;
+    height: 40px;
+}
+
+.icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+}
+
+.icons-link:hover,
+.icons-link:focus {
+    background-color: #31D0AA;
+
+}
+.team-icon {
+    fill: currentColor;
+}
+
+.icons-link:hover .team-icon,
+.icons-link:focus .team-icon {
+    fill: #31D0AA;
+}
+
 
 /* Portfolio section */
 .portfolio-section {
@@ -337,8 +388,14 @@ img {
     padding: 0;
 }
 
+
+.portfolio-item:hover {
+    border: 1px solid var(--CLOUD, #F4F4FD);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+
 .portfolio-item {
-  
     width: calc((100% - 48px) / 3);
 }
 
