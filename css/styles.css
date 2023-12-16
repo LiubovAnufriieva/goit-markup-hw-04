@@ -494,11 +494,6 @@ img {
     padding: 0;
 }
 
-.portfolio-text:hover,
-.portfolio-text:focus {
-    transform: translateY(0%);
-}
-
 /* Footer section */
 .footer-section {
     background-color: #2E2F42;
@@ -551,10 +546,6 @@ img {
 .footer-icons-link:hover,
 .footer-icons-link:focus {
     background-color: #31d0aa; 
-}
-
-.footer-icons-link {
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons-item {
