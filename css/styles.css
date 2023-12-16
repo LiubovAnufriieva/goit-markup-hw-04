@@ -114,6 +114,24 @@ img {
     color: #404BBF;
 }
 
+/*.current {
+    position: relative;
+    color:#404BBF;
+    }
+    
+.nav-link.current::after {
+    content: ‘’;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
+    } */
+
+
 .address {
     font-style: normal;
 
@@ -359,7 +377,7 @@ img {
 
 .icons-link:hover .team-icon,
 .icons-link:focus .team-icon {
-    fill: #31D0AA;
+    background-color: #31D0AA;
     color: currentColor;
 }
 
@@ -420,7 +438,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translateY(100%);
+    transform: translateY(-100%);
     transition: transform 250ms ease-in-out;  
 }
 .portfolio-item:hover .overlay {
@@ -481,9 +499,8 @@ img {
 .footer-logo { 
     display: inline-block;
     margin: 0;
-   
+    margin-bottom: 16px;
   }
-
 
 .footer-text {
     color: #F4F4FD;
